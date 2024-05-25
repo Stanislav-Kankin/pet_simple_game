@@ -2,6 +2,7 @@ import pygame as pg
 from screen_el import (
     bg_1
 )
+from utils import quit_the_game
 
 clock = pg.time.Clock()
 pg.init()
@@ -14,4 +15,4 @@ while running:
     screen.blit(bg_1, (0, 0))
 
     pg.display.update()
-    
+    quit_the_game()
