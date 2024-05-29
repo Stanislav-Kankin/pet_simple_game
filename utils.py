@@ -9,6 +9,3 @@ def quit_the_game() -> None:
         if event.type == pygame.QUIT:
             running = False
             pygame.quit()
-
-
-
