@@ -12,10 +12,12 @@ running = True
 screen = pygame.display.set_mode((995, 664))
 pygame.display.set_caption('Простая игра!!!')
 
-my_sprite = Spritesheet('images/test.png')
+my_sprite = Spritesheet('images/elf.png')
+train1 = my_sprite.get_sprite(0, 0, 80, 100)
 
 while running:
     screen.blit(bg_1, (0, 0))
+    screen.blit(train1, (15, 480))
 
     pygame.display.update()
     quit_the_game()
